@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <h1>Employee Directory</h1>
+  <input type="text" id="searchInput" placeholder="Search by name or email..." />
+  <button id="filterBtn">Filter</button>
+  <select id="sortSelect">
+    <option value="">Sort By</option>
+    <option value="firstName">First Name</option>
+    <option value="department">Department</option>
+  </select>
+  <button id="addBtn">Add Employee</button>
+</header>
+
+
+  <section id="employee-list" class="employee-grid">
+    <!-- Employee cards will be injected here -->
+  </section>
+
+
+  <!-- Filter Sidebar -->
+  <aside id="filterSidebar" class="hidden">
+    <h3>Filter Employees</h3>
+    <input type="text" id="filterFirstName" placeholder="First Name" />
+    <input type="text" id="filterDepartment" placeholder="Department" />
+    <input type="text" id="filterRole" placeholder="Role" />
+    <button id="applyFilterBtn">Apply</button>
+    <button id="closeFilterBtn">Close</button>
+  </aside>
+<section id="addForm" class="hidden">
+  <h3>Add New Employee</h3>
+  <input type="text" id="addFirstName" placeholder="First Name" required>
+  <input type="text" id="addLastName" placeholder="Last Name" required>
+  <input type="email" id="addEmail" placeholder="Email" required>
+  <input type="text" id="addDepartment" placeholder="Department" required>
+  <input type="text" id="addRole" placeholder="Role" required>
+  <input type="text" id="addCharacter" placeholder="Character Details" required>
+  <button id="saveEmployeeBtn">Save</button>
+  <button id="cancelAddBtn">Cancel</button>
+</section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
